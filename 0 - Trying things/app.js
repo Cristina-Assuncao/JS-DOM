@@ -1,8 +1,16 @@
 
+myBackground = document.getElementById("back");
+myFront = document.getElementById("front");
+
+myBackground.style.display ="none";
+
 
 const myHeading = document.getElementById("heading");
-myHeading.addEventListener("click", ()=>{
+myHeading.addEventListener("click",()=>{
     myHeading.style.color = "red";
+    myBackground.style.display = "block";
+    myFront.style.display = "none";
+
 });
 const myParagraph = document.getElementById("paragraph");
 myParagraph.addEventListener("click", ()=>{
@@ -20,5 +28,3 @@ const myHeadingFour = document.getElementById("heading4");
 myHeadingFour.addEventListener("click", ()=>{
     myHeadingFour.style.color = "pink"
 });
-
-// element.ddEventListener("click", function);
